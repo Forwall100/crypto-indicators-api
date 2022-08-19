@@ -1,12 +1,11 @@
 import re
 from fastapi import FastAPI
 import uvicorn
+from endpoints import sma
 
 app = FastAPI()
 
-@app.get("/")
-async def root():
-    return {"message"}
+app.include_router(sma.router)
 
 if __name__ == "__main__":
     uvicorn.run(
