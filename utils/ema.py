@@ -1,17 +1,6 @@
 import requests
 from .config import intervals
 
-intervals = {
-    "1m": 1,
-    "5m": 5,
-    "15m": 15,
-    "30m": 30,
-    "1h": 60,
-    "4h": 240,
-    "1d": 1440,
-    "1w": 10080
-}
-
 
 def ema(interval, candles, symbol):
     url = f"https://api.kraken.com/0/public/OHLC?pair={symbol}&interval={intervals[interval]}"
