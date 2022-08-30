@@ -1,11 +1,11 @@
-import re
 from fastapi import FastAPI
 import uvicorn
-from endpoints import sma
+from endpoints import sma, ema
 
 app = FastAPI()
 
 app.include_router(sma.router)
+app.include_router(ema.router)
 
 if __name__ == "__main__":
     uvicorn.run(
