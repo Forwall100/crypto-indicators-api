@@ -4,7 +4,7 @@ from utils.ema import ema
 
 router = APIRouter()
 
-@router.get("/ema/")
+@router.get("/ema")
 async def get_ema(interval: Interval, symbol: str, candles: int = Query(default=50)):
     try:
         return {"value": ema(interval, candles, symbol)}
