@@ -1,6 +1,5 @@
 import requests
-from config import intervals
-
+from .config import intervals
 
 def sma(interval, candles, symbol):
     url = f"https://api.kraken.com/0/public/OHLC?pair={symbol}&interval={intervals[interval]}"
