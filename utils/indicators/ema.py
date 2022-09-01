@@ -1,10 +1,8 @@
-from ..get_OHLC import kraken_OHLC
-from .sma import sma
+from statistics import mean
 
 
-def ema(interval, candles, pair):
-    OHLC = kraken_OHLC(pair, interval)
-    result = [sma(interval, candles, pair)]
+def ema(candles, OHLC):
+    result = [mean([float(price[4]) for price in OHLC])]
     k = 2/(candles+1)
 
     try:

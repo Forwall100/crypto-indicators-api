@@ -1,9 +1,7 @@
 from statistics import mean
-from ..get_OHLC import kraken_OHLC
 
 
-def rsi(interval, candles, pair):
-    OHLC = kraken_OHLC(pair, interval)
+def rsi(candles, OHLC):
 
     green = []
     red = []

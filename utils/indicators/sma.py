@@ -1,8 +1,4 @@
-from ..get_OHLC import kraken_OHLC
-
-
-def sma(interval, candles, pair):
-    OHLC = kraken_OHLC(pair, interval)
+def sma(candles, OHLC):
     prices = []
 
     try:
