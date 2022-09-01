@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Query
 from models.schemas import Interval
-from utils.rsi import rsi
+from utils.indicators.rsi import rsi
 
 router = APIRouter()
 

@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Query
 from models.schemas import Interval
-from utils.ema import ema
+from utils.indicators.ema import ema
 
 router = APIRouter()
 
