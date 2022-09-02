@@ -5,7 +5,7 @@ def sma(candles, OHLC):
         try:
             for i in OHLC[::-1][:candles]:
                 prices.append(float(i[4]))
-            return (sum(prices)/candles)
+            return (round(sum(prices)/candles, 2))
         except ZeroDivisionError:
             raise ZeroDivisionError("The period cannot be equal to 0")
         except ValueError:
