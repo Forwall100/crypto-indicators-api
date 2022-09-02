@@ -7,5 +7,5 @@ def kraken_OHLC(pair, interval):
         url = f"https://api.kraken.com/0/public/OHLC?pair={pair}&interval={intervals[interval]}"
         response = requests.get(url).json()
         return response["result"][list(response["result"].keys())[0]]
-    except ValueError:
+    except KeyError:
         raise ValueError("Unknown pair")
