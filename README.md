@@ -14,6 +14,4 @@ $ python3 main.py
 
 ## Documentation
 
-```
 Swagger documentation is available at **/docs**
-```
