@@ -4,7 +4,7 @@
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Forwall100/crypto-indicators-api/pytest?label=tests)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Forwall100/crypto-indicators-api)
 
-## Getting started
+## Getting started with python3.10 virtual env
 
 ```
 $ sudo apt-get install python3.10
