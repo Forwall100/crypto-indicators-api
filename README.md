@@ -7,9 +7,9 @@
 ## Getting started
 
 ```
-$ sudo apt-get install python
-$ python3 -m pip install -r requirements.txt
-$ python3 main.py
+$ sudo apt-get install python3.10
+$ python3.10 -m pip install -r requirements.txt
+$ python3.10 main.py
 ```
 
 ## Documentation
