@@ -8,8 +8,10 @@
 
 ```
 $ sudo apt-get install python3.10
-$ python3.10 -m pip install -r requirements.txt
-$ python3.10 main.py
+$ python3.10 -m venv .venv
+$ source .venv/bin/activate
+$ python -m pip install -r requirements.txt
+$ python main.py
 ```
 
 ## Documentation
