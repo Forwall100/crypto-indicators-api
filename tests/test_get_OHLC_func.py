@@ -8,9 +8,11 @@ def test_bad_pair():
     with pytest.raises(ValueError):
         kraken_OHLC("BADPAIR", intervals["1m"])
 
+
 def test_bad_interval():
     with pytest.raises(ValueError):
         kraken_OHLC("BTCUSD", 13370)
+
 
 @pytest.mark.parametrize("pair, interval", [
     (123, intervals["1m"]),

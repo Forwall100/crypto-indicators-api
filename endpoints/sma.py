@@ -5,6 +5,7 @@ from utils.get_OHLC import kraken_OHLC
 
 router = APIRouter()
 
+
 @router.get("/sma")
 async def get_sma(interval: Interval, symbol: str, candles: int = Query(default=50)):
     try:

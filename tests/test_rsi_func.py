@@ -16,6 +16,7 @@ def test_zero_candles():
     with pytest.raises(ValueError):
         rsi(0, OHLC)
 
+
 def test_one_candles():
     with pytest.raises(ValueError):
         rsi(1, OHLC)

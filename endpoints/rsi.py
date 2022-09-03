@@ -5,6 +5,7 @@ from utils.get_OHLC import kraken_OHLC
 
 router = APIRouter()
 
+
 @router.get("/rsi")
 async def get_rsi(interval: Interval, symbol: str, candles: int = Query(default=14)):
     try:
