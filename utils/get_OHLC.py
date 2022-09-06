@@ -3,7 +3,7 @@ from .constans import intervals
 
 
 def kraken_OHLC(pair, interval):
-    if interval in intervals.values():
+    if interval in intervals.keys():
         try:
             url = f"https://api.kraken.com/0/public/OHLC?pair={pair}&interval={intervals[interval]}"
             response = requests.get(url).json()

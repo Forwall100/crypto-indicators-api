@@ -23,14 +23,3 @@ def test_bad_interval():
 def test_type_pair(pair, interval):
     with pytest.raises(ValueError):
         kraken_OHLC(pair, interval)
-
-
-@pytest.mark.parametrize("pair, interval", [
-    ("BTCUSD", "1m"),
-    ("BTCUSD", ["1m"]),
-    ("BTCUSD", {1: "1m"}),
-    ("BTCUSD", True)
-])
-def test_type_interval(pair, interval):
-    with pytest.raises(ValueError):
-        kraken_OHLC(pair, interval)
